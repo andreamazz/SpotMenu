@@ -70,9 +70,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             if let title = Spotify.currentTrack.title , lastTitle != title || lastArtist != artist || lastState != state {
                 switch state {
                 case .playing:
-                    statusItem.title = "🎶 \(artist) - \(title)  "
+                    statusItem.title = ""
                 default:
-                    statusItem.title = "\(artist) - \(title)  "
+                    statusItem.title = ""
                 }
                 
                 lastArtist = artist

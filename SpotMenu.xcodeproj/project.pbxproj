@@ -20,7 +20,6 @@
 		2133243A1D79967B0060D48C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213324381D79967B0060D48C /* ViewController.swift */; };
 		2133243B1D79967B0060D48C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 213324391D79967B0060D48C /* ViewController.xib */; };
 		2133243F1D7999180060D48C /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2133243E1D7999180060D48C /* EventMonitor.swift */; };
-		21A668181D7F13CE009813E5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A668171D7F13CE009813E5 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +62,6 @@
 		213324381D79967B0060D48C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		213324391D79967B0060D48C /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2133243E1D7999180060D48C /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
-		21A668171D7F13CE009813E5 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +125,6 @@
 		2133242A1D79801E0060D48C /* SpotMenu */ = {
 			isa = PBXGroup;
 			children = (
-				21A668171D7F13CE009813E5 /* CustomButton.swift */,
 				2133243E1D7999180060D48C /* EventMonitor.swift */,
 				2133242B1D79801E0060D48C /* AppDelegate.swift */,
 				213324381D79967B0060D48C /* ViewController.swift */,
@@ -265,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A668181D7F13CE009813E5 /* CustomButton.swift in Sources */,
 				2133243F1D7999180060D48C /* EventMonitor.swift in Sources */,
 				2133242C1D79801E0060D48C /* AppDelegate.swift in Sources */,
 				2133243A1D79967B0060D48C /* ViewController.swift in Sources */,

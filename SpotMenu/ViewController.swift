@@ -33,7 +33,6 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         defaultImage = artworkImageView.image
-        
     }
     
     override func viewDidDisappear() {
@@ -82,9 +81,9 @@ class ViewController: NSViewController {
     func updateButton(_ state: PlayerState){
         switch state {
         case .paused:
-            playerStateButton.title = "▶︎"
+            playerStateButton.image = NSImage(named: "play")
         case .playing:
-            playerStateButton.title = "🁢🁢"
+            playerStateButton.image = NSImage(named: "pause")
         }
     }
     
@@ -133,7 +132,7 @@ extension ViewController {
     }
     
     @IBAction func positionSliderAction(_ sender: AnyObject) {
-        Spotify.currentTrack.positionPercentage = positionSlider.doubleValue/100.0
+        Spotify.currentTrack.positionPercentage = positionSlider.doubleValue / 100.0
     }
     
     @IBAction func togglePlay(_ sender: AnyObject) {
