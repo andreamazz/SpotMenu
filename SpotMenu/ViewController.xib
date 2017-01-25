@@ -58,7 +58,7 @@
                         <constraint firstAttribute="width" constant="165" id="lp2-dB-bUm"/>
                         <constraint firstAttribute="height" constant="165" id="rJt-NQ-tfK"/>
                     </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSUserGuest" id="Fhc-bN-wFm"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="placeholder" id="Fhc-bN-wFm"/>
                 </imageView>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kKw-j2-npT" customClass="CustomButton" customModule="SpotMenu" customModuleProvider="target">
                     <rect key="frame" x="102" y="20" width="36" height="24"/>
@@ -75,7 +75,10 @@
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K9G-tg-uHc">
-                    <rect key="frame" x="24" y="274" width="192" height="16"/>
+                    <rect key="frame" x="18" y="274" width="204" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="dpo-h4-HEE"/>
+                    </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Title" id="B79-kR-dvt">
                         <font key="font" metaFont="systemSemibold" size="12"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -83,7 +86,10 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASf-hA-Jpd">
-                    <rect key="frame" x="24" y="294" width="198" height="16"/>
+                    <rect key="frame" x="18" y="294" width="204" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="tCw-S4-EWv"/>
+                    </constraints>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Artist" id="nev-Qv-RxC">
                         <font key="font" metaFont="system" size="12"/>
                         <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
@@ -146,8 +152,8 @@
                 <constraint firstItem="Xn7-8U-izq" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="JS7-nu-V8f"/>
                 <constraint firstItem="Xn7-8U-izq" firstAttribute="top" secondItem="K9G-tg-uHc" secondAttribute="bottom" constant="8" id="KId-IU-E8g"/>
                 <constraint firstItem="A6q-1b-sQK" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="LbA-tI-5IF"/>
-                <constraint firstItem="K9G-tg-uHc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="26" id="P8x-xF-8AX"/>
-                <constraint firstItem="ASf-hA-Jpd" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="26" id="PZ5-hd-PKG"/>
+                <constraint firstItem="K9G-tg-uHc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="P8x-xF-8AX"/>
+                <constraint firstItem="ASf-hA-Jpd" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="PZ5-hd-PKG"/>
                 <constraint firstAttribute="trailing" secondItem="mAv-Kd-sLP" secondAttribute="trailing" constant="20" id="VIf-9Z-AT8"/>
                 <constraint firstAttribute="bottom" secondItem="kKw-j2-npT" secondAttribute="bottom" constant="20" id="aCc-Cg-tuu"/>
                 <constraint firstItem="mNr-fZ-XKr" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="drV-Yl-kTA"/>
@@ -156,7 +162,7 @@
                 <constraint firstItem="mNr-fZ-XKr" firstAttribute="top" secondItem="A6q-1b-sQK" secondAttribute="bottom" constant="7" id="jQl-Pd-wa3"/>
                 <constraint firstAttribute="trailing" secondItem="ASf-hA-Jpd" secondAttribute="trailing" constant="20" id="maw-YD-RX5"/>
                 <constraint firstAttribute="trailing" secondItem="A6q-1b-sQK" secondAttribute="trailing" constant="20" id="mjK-zh-HpY"/>
-                <constraint firstAttribute="trailing" secondItem="K9G-tg-uHc" secondAttribute="trailing" constant="26" id="mjl-8d-sYS"/>
+                <constraint firstAttribute="trailing" secondItem="K9G-tg-uHc" secondAttribute="trailing" constant="20" id="mjl-8d-sYS"/>
                 <constraint firstItem="kKw-j2-npT" firstAttribute="centerY" secondItem="Yep-Ke-bY7" secondAttribute="centerY" id="qRM-nW-SVb"/>
                 <constraint firstItem="kKw-j2-npT" firstAttribute="leading" secondItem="Yep-Ke-bY7" secondAttribute="trailing" constant="36" id="ruv-P3-hVY"/>
             </constraints>
@@ -164,10 +170,10 @@
         </customView>
     </objects>
     <resources>
-        <image name="NSUserGuest" width="32" height="32"/>
         <image name="back" width="20" height="16"/>
         <image name="close" width="16" height="16"/>
         <image name="forward" width="20" height="16"/>
+        <image name="placeholder" width="165" height="165"/>
         <image name="play" width="36" height="36"/>
     </resources>
 </document>
