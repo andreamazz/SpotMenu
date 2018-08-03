@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +21,7 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="240" height="340"/>
+            <rect key="frame" x="0.0" y="0.0" width="240" height="181"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="Yep-Ke-bY7">
@@ -53,10 +53,10 @@
                     </connections>
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xn7-8U-izq">
-                    <rect key="frame" x="38" y="101" width="165" height="165"/>
+                    <rect key="frame" x="38" y="107" width="165" height="0.0"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="165" id="lp2-dB-bUm"/>
-                        <constraint firstAttribute="height" constant="165" id="rJt-NQ-tfK"/>
+                        <constraint firstAttribute="height" id="rJt-NQ-tfK"/>
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="placeholder" id="Fhc-bN-wFm"/>
                 </imageView>
@@ -75,7 +75,7 @@
                     </connections>
                 </button>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K9G-tg-uHc">
-                    <rect key="frame" x="18" y="274" width="204" height="16"/>
+                    <rect key="frame" x="18" y="115" width="204" height="16"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="dpo-h4-HEE"/>
                     </constraints>
@@ -86,18 +86,18 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASf-hA-Jpd">
-                    <rect key="frame" x="18" y="294" width="204" height="16"/>
+                    <rect key="frame" x="18" y="135" width="204" height="16"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="tCw-S4-EWv"/>
                     </constraints>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Artist" id="nev-Qv-RxC">
-                        <font key="font" metaFont="system" size="12"/>
+                        <font key="font" metaFont="cellTitle"/>
                         <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mNr-fZ-XKr">
-                    <rect key="frame" x="18" y="58" width="20" height="13"/>
+                    <rect key="frame" x="18" y="64" width="20" height="13"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="left" id="LI8-9v-VUQ">
                         <font key="font" metaFont="system" size="10"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
@@ -105,7 +105,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mAv-Kd-sLP">
-                    <rect key="frame" x="195" y="58" width="27" height="13"/>
+                    <rect key="frame" x="195" y="64" width="27" height="13"/>
                     <gestureRecognizers>
                         <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="5ed-UW-GeF">
                             <connections>
@@ -120,14 +120,14 @@
                     </textFieldCell>
                 </textField>
                 <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A6q-1b-sQK">
-                    <rect key="frame" x="18" y="76" width="204" height="19"/>
+                    <rect key="frame" x="18" y="82" width="204" height="19"/>
                     <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="Ed8-w5-97B"/>
                     <connections>
                         <action selector="positionSliderAction:" target="-2" id="Gye-dw-Mjw"/>
                     </connections>
                 </slider>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NRN-Xl-zGY">
-                    <rect key="frame" x="216" y="316" width="16" height="16"/>
+                    <rect key="frame" x="216" y="157" width="16" height="16"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="16" id="Z9D-Ew-BJt"/>
                         <constraint firstAttribute="width" constant="16" id="lFR-ir-pai"/>
@@ -166,7 +166,7 @@
                 <constraint firstItem="kKw-j2-npT" firstAttribute="centerY" secondItem="Yep-Ke-bY7" secondAttribute="centerY" id="qRM-nW-SVb"/>
                 <constraint firstItem="kKw-j2-npT" firstAttribute="leading" secondItem="Yep-Ke-bY7" secondAttribute="trailing" constant="36" id="ruv-P3-hVY"/>
             </constraints>
-            <point key="canvasLocation" x="349" y="362"/>
+            <point key="canvasLocation" x="349" y="282.5"/>
         </customView>
     </objects>
     <resources>
